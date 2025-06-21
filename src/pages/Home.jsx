@@ -50,7 +50,7 @@ const Home = () => {
             <div className="relative rounded-lg overflow-hidden shadow-lg bg-white">
               <img
                 className="w-full h-[300px] sm:h-[400px] object-cover object-top"
-                src={`http://localhost:3000/${news[0]?.image}`}
+                src={`${import.meta.env.VITE_SERVER_URL}${news[0]?.image}`}
                 alt={news[0]?.headline}
               />
               <div className="absolute bottom-0 bg-black/60 text-white p-4 sm:p-6 w-full">
