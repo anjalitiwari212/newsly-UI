@@ -135,7 +135,7 @@ const Profile = () => {
                     <tr key={item._id} className="border-b hover:bg-gray-100">
                       <td className="p-4">
                         <img
-                          src={`http://localhost:3000/${item.image}`}
+                          src={`${import.meta.env.VITE_SERVER_URL}${item.image}`}
                           alt="News"
                           className="w-12 h-12 rounded-md object-cover"
                         />
