@@ -9,7 +9,7 @@ const NewsCard = ({ value }) => {
       {/* Image */}
       <img
         className="w-full h-52 object-cover"
-        src={value.image ? `http://localhost:3000/${value.image}` : "https://via.placeholder.com/400"}
+        src={value.image ? `${import.meta.env.VITE_SERVER_URL}${value.image}` : "https://via.placeholder.com/400"}
         alt={value.headline}
       />
 
