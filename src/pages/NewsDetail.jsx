@@ -57,7 +57,7 @@ const NewsDetail = () => {
             <div className="relative overflow-hidden rounded-lg shadow-xl bg-white">
               <img
                 className="w-full h-[450px] sm:h-[500px] object-cover object-center transition-all duration-500 ease-in-out transform hover:scale-105"
-                src={`http://localhost:3000/${news.image}`} // Assuming image path is available
+                src={`${import.meta.env.VITE_SERVER_URL}${news.image}`} // Assuming image path is available
                 alt={news.headline}
               />
             </div>
